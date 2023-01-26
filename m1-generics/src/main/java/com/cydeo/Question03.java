@@ -8,6 +8,6 @@ public final class Question03 {
     }
     public static <T> T max(T x, T y) {
             return (Integer)x > (Integer)y ? x : y;
-        }
     }
 }
+
