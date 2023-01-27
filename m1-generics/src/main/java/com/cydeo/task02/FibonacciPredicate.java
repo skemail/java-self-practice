@@ -14,6 +14,7 @@ public class FibonacciPredicate implements UnaryPredicate<Integer>{
             int temp = currentNumber;
             currentNumber = previousNumber+currentNumber;
             previousNumber = temp;
+            System.out.println(currentNumber);
             if(currentNumber==obj){
                 return true;
             }

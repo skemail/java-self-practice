@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<Integer> ci = Arrays.asList(1, 2, 3, 4,7,90,233,196418,514229);
+        List<Integer> ci = Arrays.asList(1, 2, 3, 4,7,90,233,196418,514229,634534);
         List<String> s1 = Arrays.asList("one", "two", "three", "four");
 
         System.out.println(countIf(ci, new OddPredicate()));

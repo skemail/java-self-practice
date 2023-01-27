@@ -9,15 +9,27 @@ public class Task01 {
 
         Integer[] arr1 = {1,2,3,4,5};
         String[] arr2 = {"Java","Python","C++","Maven"};
+        Integer [] arr3 = {1,2,3};
+        String [] arr4 = {"Java"};
         swap(arr1,0,4);
         swap(arr2,"Java","Maven");
-
+        swap(arr3,0,4);
+        swap(arr4,0,1);
 
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(arr2));
-
     }
     public static  <T>  void swap(T[] arr, int firstIndex, int secondIndex){
+        if(arr.length<2){
+            System.out.println("Array length less than, 2 nothing to swap");
+            return;
+        }
+        if(firstIndex==secondIndex)
+            return;
+        if(firstIndex<0||firstIndex>=arr.length||secondIndex<0||secondIndex>= arr.length){
+            System.out.println("Array indexes not correct");
+            return;
+        }
         T temp = arr[firstIndex];
         arr[firstIndex] = arr[secondIndex];
         arr[secondIndex] = temp;
