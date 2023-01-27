@@ -47,7 +47,6 @@ public class MemberTest {
 
         memberConsumer.accept(members);
 
-
         System.out.println("/////////////////////////FUNCTION//////////////////////////////");
 
         Function<List<Member>,String> memberFunction = p -> {
@@ -61,12 +60,6 @@ public class MemberTest {
         };
 
         System.out.println(memberFunction.apply(members));;
-
-
-
-
-
-
 
     }
 }
