@@ -1,13 +1,12 @@
 package com.cydeo.task02lambda;
 
 
-import com.cydeo.task01lambda.Apple;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 import static com.cydeo.task02lambda.Gender.*;
 
@@ -60,6 +59,21 @@ public class MemberTest {
         };
 
         System.out.println(memberFunction.apply(members));;
+
+        System.out.println("/////////////////////////SUPPLIER/////////////////////////");
+
+        Supplier<String> memberSupplier = () -> {
+
+            String result = "";
+            for (Member member : members) {
+                if(member.getAge()>=18&&member.getAge()<=25&&member.getGender()==MALE){
+                    result+=  ("Send message to " + member+"\n");
+                }
+            }
+            return result;
+        };
+
+        System.out.println(memberSupplier.get());
 
     }
 }
