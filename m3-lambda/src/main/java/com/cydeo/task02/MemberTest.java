@@ -19,8 +19,6 @@ public class MemberTest {
         members.add(new Member("Mark", MALE, 24));
 
         sendMessage(members,new EligibleMessageImp());
-
-
     }
     private static void sendMessage(List<Member> members, MemberPredicate p){
 

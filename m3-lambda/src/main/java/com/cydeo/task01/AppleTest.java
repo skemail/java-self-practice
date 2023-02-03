@@ -5,9 +5,7 @@ import java.util.List;
 import static com.cydeo.task01.Color.*;
 
 public class AppleTest {
-
     public static void main(String[] args) {
-
 
         List<Apple> list = new ArrayList<>();
 
@@ -23,12 +21,10 @@ public class AppleTest {
 
         prettyPrintApple(list,new AppleListImp2());
 
-
     }
     public static void prettyPrintApple(List<Apple> inventory, ApplePredicate p){
         for(Apple apple : inventory){
             String output = p.test(apple);
             System.out.println(output); }
     }
-
 }

@@ -1,10 +1,7 @@
 package com.cydeo.task01lambda;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
+import java.util.*;
+import java.util.function.*;
 
 import static com.cydeo.task01lambda.Color.*;
 
@@ -60,7 +57,5 @@ public class AppleTest {
         for (Apple apple : list) {
             System.out.println(appleWeightColorFunction.apply(apple));
         }
-
-
     }
 }
