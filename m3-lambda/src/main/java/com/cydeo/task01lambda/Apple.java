@@ -1,6 +1,6 @@
 package com.cydeo.task01lambda;
 
-import com.cydeo.task01lambda.Color;
+
 import lombok.*;
 
 @AllArgsConstructor@Getter@ToString@Setter
